@@ -1,253 +1,126 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoo des Animaux Volants</title>
-    <style>
-        /* Mise en forme globale */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-
-        /* En-tête */
-        header {
-            background-image: url('https://www.w3schools.com/w3images/forest.jpg');
-            background-size: cover;
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #333;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            text-align: center;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #4CAF50;
-        }
-
-        /* Sections */
-        section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        h2 {
-            text-align: center;
-            color: #4CAF50;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 30px;
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            font-size: 1.8em;
-            color: #333;
-            padding: 15px;
-            margin: 0;
-        }
-
-        .card p {
-            padding: 0 15px 15px;
-            color: #555;
-            font-size: 1em;
-        }
-
-        /* Contact Section */
-        .contact-info {
-            background-color: #333;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        .contact-info h3 {
-            font-size: 2em;
-        }
-
-        .contact-info p {
-            font-size: 1.2em;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 1em;
-            margin: 0;
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .card-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .card {
-                width: 80%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Zoo des Volants</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #575;
+      color: white;
+    }
+    .container {
+      padding: 20px;
+    }
+    .animal-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+    }
+    .animal-card img {
+      width: 300px;
+      object-fit: cover;
+    }
+    .animal-details {
+      padding: 20px;
+      flex: 1;
+    }
+    .animal-details h2 {
+      margin-top: 0;
+    }
+    footer {
+      background-color: #333;
+      color: #ddd;
+      text-align: center;
+      padding: 10px;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .animal-card {
+        flex-direction: column;
+      }
+      .animal-card img {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Zoo des Animaux Volants</h1>
-        <p>Venez découvrir la majesté des créatures du ciel</p>
-    </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#animaux">Nos Animaux</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <h1>Zoo des Volants</h1>
+    <p>Bienvenue dans le paradis des oiseaux, chauves-souris & autres maîtres du ciel</p>
+  </header>
 
-    <!-- Section Accueil -->
-    <section id="accueil">
-        <h2>Bienvenue au Zoo des Animaux Volants</h2>
-        <p>
-            Le Zoo des Animaux Volants est un lieu unique où vous pourrez observer une variété d'animaux qui partagent la
-            capacité de voler. Notre zoo se consacre à la conservation de ces espèces fascinantes tout en offrant une
-            expérience éducative pour toute la famille.
-        </p>
-        <p>
-            Nous accueillons des oiseaux exotiques, des chauves-souris, des insectes et bien plus encore. Grâce à nos
-            espaces d'observation interactifs et nos présentations, vous en apprendrez davantage sur ces créatures
-            incroyables et leur rôle crucial dans l'écosystème.
-        </p>
-    </section>
+  <nav>
+    <a href="#oiseaux">Oiseaux</a>
+    <a href="#chauves-souris">Chauves-souris</a>
+    <a href="#insectes">Insectes volants</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <!-- Section Nos Animaux -->
-    <section id="animaux">
-        <h2>Nos Animaux Volants</h2>
-        <div class="card-container">
-            <div class="card">
-                <img src="https://www.nationalgeographic.com/content/dam/animals/2020/03/bee-hummingbird-ss/01-hummingbird-bee.adapt.1900.1.jpg" alt="Oiseau Exotique">
-                <h3>Colibri</h3>
-                <p>Le colibri, avec ses ailes battant à une vitesse incroyable, est l'un des oiseaux les plus fascinants à observer en vol.</p>
-            </div>
-            <div class="card">
-                <img src="https://www.nationalgeographic.com/content/dam/animals/pictures/mammals/bats/bats-and-nature.adapt.1900.1.jpg" alt="Chauve-souris">
-                <h3>Chauve-souris</h3>
-                <p>Nos chauves-souris sont les maîtres de la nuit, jouant un rôle crucial dans la pollinisation et le contrôle des insectes.</p>
-            </div>
-            <div class="card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Monarch_Butterfly_Danaus_plexippus_Male_2013.jpg/800px-Monarch_Butterfly_Danaus_plexippus_Male_2013.jpg" alt="Papillon">
-                <h3>Papillon Monarque</h3>
-                <p>Le Papillon Monarque est célèbre pour ses migrations épiques. Venez admirer leur beauté et leur grâce.</p>
-            </div>
-        </div>
-    </section>
+  <div class="container">
 
-    <!-- Section Contact -->
-    <section id="contact">
-        <div class="contact-info">
-            <h3>Contactez-nous</h3>
-            <p>Adresse: 123 Rue du Ciel, 75000 Paris</p>
-            <p>Email: contact@zoodesanimauxvolants.com</p>
-            <p>Téléphone: 01 23 45 67 89</p>
-        </div>
-    </section>
+    <!-- Exemple d'oiseau -->
+    <div id="oiseaux" class="animal-card">
+      <img src="https://images.unsplash.com/photo-... (met ici l'URL d'une image d'oiseau)" alt="Oiseau majestueux">
+      <div class="animal-details">
+        <h2>Oiseau Majestueux</h2>
+        <p>Ce bel oiseau grâce à ses ailes larges est capable de planer des heures au-dessus des montagnes. Il représente parfaitement la grâce et la liberté dans les airs.</p>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Zoo des Animaux Volants - Tous droits réservés</p>
-    </footer>
+    <!-- Exemple de chauve-souris -->
+    <div id="chauves-souris" class="animal-card">
+      <img src="https://images.unsplash.com/photo-... (URL d'une chauve-souris)" alt="Chauve-Souris de Nuit">
+      <div class="animal-details">
+        <h2>Chauve-Souris de Nuit</h2>
+        <p>Unique mammifère capable de vol actif, la chauve-souris utilise l’écholocation pour se déplacer dans l’obscurité. Elle joue un rôle essentiel dans l’écosystème nocturne.</p>
+      </div>
+    </div>
 
-    <!-- JavaScript pour animation -->
-    <script>
-        // Animation de bienvenue au scroll
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                const sectionTop = section.getBoundingClientRect().top;
-                const sectionBottom = section.getBoundingClientRect().bottom;
+    <!-- Exemple d'insecte volant -->
+    <div id="insectes" class="animal-card">
+      <img src="https://images.unsplash.com/photo-... (URL d’un insecte volant)" alt="Papillon coloré">
+      <div class="animal-details">
+        <h2>Papillon Coloré</h2>
+        <p>Fragile mais magnifique, cet insecte volant illumine les jardins de ses ailes multicolores et participe à la pollinisation des fleurs.</p>
+      </div>
+    </div>
 
-                if (sectionTop < window.innerHeight && sectionBottom >= 0) {
-                    section.classList.add('visible');
-                }
-            });
-        });
+  </div>
 
-        // Ajouter la classe 'visible' pour animer les sections au scroll
-        const style = document.createElement('style');
-        style.innerHTML = `
-            section {
-                opacity: 0;
-                transform: translateY(50px);
-                transition: opacity 0.5s ease, transform 0.5s ease;
-            }
+  <footer id="contact">
+    <p>Zoo des Volants • 123 rue des Plumes • 00000 Ville Verte • Téléphone: 01 23 45 67 89</p>
+    <p>Email: contact@zoodesvolants exemple.fr</p>
+  </footer>
 
-            section.visible {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        `;
-        document.head.appendChild(style);
-    </script>
 </body>
-
 </html>
