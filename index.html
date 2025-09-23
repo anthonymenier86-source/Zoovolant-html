@@ -2,124 +2,121 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Zoo des Volants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoo volant</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
+      background-color: #f4f9ff;
+      color: #333;
     }
     header {
-      background-color: #4CAF50;
+      background-color: #5ec8f2;
       color: white;
-      padding: 20px;
+      padding: 20px 0;
       text-align: center;
     }
     nav {
-      background-color: #333;
-      overflow: hidden;
+      background-color: #3b9cc9;
+      text-align: center;
+      padding: 10px 0;
     }
     nav a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background-color: #575;
       color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    .container {
-      padding: 20px;
-    }
-    .animal-card {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-      overflow: hidden;
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
       display: flex;
-      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
-    .animal-card img {
-      width: 300px;
-      object-fit: cover;
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .animal-details {
-      padding: 20px;
-      flex: 1;
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
     }
-    .animal-details h2 {
-      margin-top: 0;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #333;
-      color: #ddd;
+      background-color: #3b9cc9;
+      color: white;
       text-align: center;
-      padding: 10px;
-    }
-    /* Responsive */
-    @media (max-width: 600px) {
-      .animal-card {
-        flex-direction: column;
-      }
-      .animal-card img {
-        width: 100%;
-      }
+      padding: 20px 10px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Zoo des Volants</h1>
-    <p>Bienvenue dans le paradis des oiseaux, chauves-souris & autres maîtres du ciel</p>
+    <h1>Zoo des Ailes du Monde</h1>
+    <p>Explorez les merveilles du ciel</p>
   </header>
 
   <nav>
-    <a href="#oiseaux">Oiseaux</a>
-    <a href="#chauves-souris">Chauves-souris</a>
-    <a href="#insectes">Insectes volants</a>
+    <a href="#a-propos">À propos</a>
+    <a href="#animaux">Nos espèces</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
-
-    <!-- Exemple d'oiseau -->
-    <div id="oiseaux" class="animal-card">
-      <img src="https://images.unsplash.com/photo-... (met ici l'URL d'une image d'oiseau)" alt="Oiseau majestueux">
-      <div class="animal-details">
-        <h2>Oiseau Majestueux</h2>
-        <p>Ce bel oiseau grâce à ses ailes larges est capable de planer des heures au-dessus des montagnes. Il représente parfaitement la grâce et la liberté dans les airs.</p>
-      </div>
-    </div>
-
-    <!-- Exemple de chauve-souris -->
-    <div id="chauves-souris" class="animal-card">
-      <img src="https://images.unsplash.com/photo-... (URL d'une chauve-souris)" alt="Chauve-Souris de Nuit">
-      <div class="animal-details">
-        <h2>Chauve-Souris de Nuit</h2>
-        <p>Unique mammifère capable de vol actif, la chauve-souris utilise l’écholocation pour se déplacer dans l’obscurité. Elle joue un rôle essentiel dans l’écosystème nocturne.</p>
-      </div>
-    </div>
-
-    <!-- Exemple d'insecte volant -->
-    <div id="insectes" class="animal-card">
-      <img src="https://images.unsplash.com/photo-... (URL d’un insecte volant)" alt="Papillon coloré">
-      <div class="animal-details">
-        <h2>Papillon Coloré</h2>
-        <p>Fragile mais magnifique, cet insecte volant illumine les jardins de ses ailes multicolores et participe à la pollinisation des fleurs.</p>
-      </div>
-    </div>
-
+  <div class="hero">
+    Bienvenue au Zoo des Ailes
   </div>
 
-  <footer id="contact">
-    <p>Zoo des Volants • 123 rue des Plumes • 00000 Ville Verte • Téléphone: 01 23 45 67 89</p>
-    <p>Email: contact@zoodesvolants exemple.fr</p>
+  <section id="a-propos" class="section">
+    <h2>À propos</h2>
+    <p>
+      Le Zoo des Ailes du Monde est un lieu unique dédié à la découverte des créatures qui peuplent les airs. 
+      Des majestueux rapaces aux minuscules colibris, en passant par les chauves-souris mystérieuses et les papillons colorés, 
+      notre zoo abrite une incroyable variété d’espèces volantes.
+    </p>
+  </section>
+
+  <section id="animaux" class="section">
+    <h2>Nos espèces volantes</h2>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Bald_Eagle_Portrait.jpg" alt="Aigle">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Hummingbird.jpg" alt="Colibri">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Fruit_bat.jpg" alt="Chauve-souris">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Blue_morpho_butterfly.jpg" alt="Papillon morpho">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Owl_in_flight_-_5.jpg" alt="Hibou">
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p style="text-align: center;">
+      📍 classe bts ciel2 <br>
+      📞 ........<br>
+      📧 contact@btsciel2.fr
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 zoo volant – Tous droits réservés.
   </footer>
 
 </body>
