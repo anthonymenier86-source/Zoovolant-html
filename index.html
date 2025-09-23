@@ -1,130 +1,208 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoo des Animaux Volants</title>
     <style>
+        /* Mise en forme globale */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
         }
 
+        /* En-tête */
         header {
-            background-color: #4CAF50;
+            background-image: url('https://via.placeholder.com/1500x600/5eafcb/ffffff?text=Zoo+des+Animaux+Volants');
+            background-size: cover;
             color: white;
-            padding: 10px 0;
+            padding: 60px 0;
             text-align: center;
         }
 
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
         nav {
+            background-color: #333;
             display: flex;
             justify-content: center;
-            background-color: #333;
+            padding: 10px 0;
         }
 
         nav a {
             color: white;
-            padding: 14px 20px;
+            padding: 15px 30px;
             text-decoration: none;
             text-align: center;
+            transition: background-color 0.3s;
         }
 
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #4CAF50;
         }
 
+        /* Sections */
         section {
-            padding: 20px;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
         }
 
-        .intro {
+        h2 {
             text-align: center;
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 40px;
         }
 
         .card-container {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
-            margin-top: 20px;
+            justify-content: space-around;
+            gap: 30px;
         }
 
         .card {
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 250px;
-            margin: 10px;
-            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
         }
 
         .card img {
             width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.8em;
+            color: #333;
+            padding: 15px;
+            margin: 0;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+            color: #555;
+            font-size: 1em;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
             border-radius: 10px;
         }
 
+        .contact-info h3 {
+            font-size: 2em;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+        }
+
+        /* Footer */
         footer {
             background-color: #333;
             color: white;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .contact-info {
-            margin-top: 20px;
+            padding: 20px;
             text-align: center;
         }
 
+        footer p {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
     </style>
 </head>
-<body>
 
+<body>
+    <!-- Header -->
     <header>
-        <h1>Bienvenue au Zoo des Animaux Volants</h1>
-        <p>Découvrez les merveilles du ciel</p>
+        <h1>Zoo des Animaux Volants</h1>
+        <p>Venez découvrir la majesté des créatures du ciel</p>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <a href="#accueil">Accueil</a>
         <a href="#animaux">Nos Animaux</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- Section Accueil -->
     <section id="accueil">
-        <div class="intro">
-            <h2>Un zoo unique en son genre</h2>
-            <p>Le Zoo des Animaux Volants est un lieu où vous pouvez observer des oiseaux exotiques, des chauves-souris, des insectes volants et bien d'autres créatures fascinantes qui partagent la capacité de voler. Notre mission est de sensibiliser à la conservation des espèces menacées et de vous offrir une expérience inoubliable.</p>
-        </div>
+        <h2>Bienvenue au Zoo des Animaux Volants</h2>
+        <p>
+            Le Zoo des Animaux Volants est un lieu unique où vous pourrez observer une variété d'animaux qui partagent la
+            capacité de voler. Notre zoo se consacre à la conservation de ces espèces fascinantes tout en offrant une
+            expérience éducative pour toute la famille.
+        </p>
+        <p>
+            Nous accueillons des oiseaux exotiques, des chauves-souris, des insectes et bien plus encore. Grâce à nos
+            espaces d'observation interactifs et nos présentations, vous en apprendrez davantage sur ces créatures
+            incroyables et leur rôle crucial dans l'écosystème.
+        </p>
     </section>
 
+    <!-- Section Nos Animaux -->
     <section id="animaux">
         <h2>Nos Animaux Volants</h2>
         <div class="card-container">
             <div class="card">
-                <img src="https://via.placeholder.com/250" alt="Oiseau exotique">
+                <img src="https://via.placeholder.com/500x300" alt="Oiseau Exotique">
                 <h3>Oiseau Exotique</h3>
-                <p>Admirez les magnifiques couleurs des oiseaux tropicaux qui volent librement dans nos espaces dédiés.</p>
+                <p>Nos oiseaux tropicaux aux couleurs éclatantes raviront vos yeux ! Observez leur vol majestueux et apprenez-en plus sur leurs habitudes migratoires.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/250" alt="Chauve-souris">
+                <img src="https://via.placeholder.com/500x300" alt="Chauve-souris">
                 <h3>Chauve-souris</h3>
-                <p>Explorez le monde mystérieux des chauves-souris et découvrez leur rôle essentiel dans l'écosystème nocturne.</p>
+                <p>Ces créatures nocturnes jouent un rôle vital dans l'écosystème. Venez observer leurs comportements fascinants et découvrir comment elles contribuent à l'équilibre naturel.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/250" alt="Papillon">
+                <img src="https://via.placeholder.com/500x300" alt="Papillon">
                 <h3>Papillons</h3>
-                <p>Les papillons sont les bijoux du zoo, avec leurs ailes colorées et leurs parcours fascinants.</p>
+                <p>Les papillons, symboles de beauté et de transformation, parcourent nos jardins. Venez les admirer de près et comprendre leur cycle de vie fascinant.</p>
             </div>
         </div>
     </section>
 
+    <!-- Section Contact -->
     <section id="contact">
         <div class="contact-info">
             <h3>Contactez-nous</h3>
@@ -134,9 +212,42 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Zoo des Animaux Volants - Tous droits réservés</p>
     </footer>
 
+    <!-- JavaScript pour animation -->
+    <script>
+        // Animation de bienvenue au scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+
+                if (sectionTop < window.innerHeight && sectionBottom >= 0) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+
+        // Ajouter la classe 'visible' pour animer les sections au scroll
+        const style = document.createElement('style');
+        style.innerHTML = `
+            section {
+                opacity: 0;
+                transform: translateY(50px);
+                transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+
+            section.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
+
 </html>
