@@ -1,123 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zoo volant</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #FFFFFF;
-      color: #333;
-    }
-    header {
-      background-color: #38B303;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav {
-      background-color: #FFFFFF;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    .hero {
-      background-image: url('https://fr.pngtree.com/freebackground/nature-forest-sun-ecology_2394782.html');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 2.5em;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      background-color: #38B303;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-      margin-top: 40px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zoo des Espèces Volantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            color: #004d40;
+        }
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #b2dfdb;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        section.presentation {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        section.presentation h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        section.presentation p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        section.galerie {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .oiseau {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .oiseau:hover {
+            transform: scale(1.05);
+        }
+        .oiseau img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .oiseau h3 {
+            margin: 10px 0 5px;
+        }
+        .oiseau p {
+            padding: 0 10px 15px;
+            font-size: 1rem;
+            color: #00796b;
+        }
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Zoo des Espèces Volantes</h1>
+        <nav>
+            <a href="#presentation">Présentation</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <header>
-    <h1>Zoo Volant</h1>
-    <p>Explorez les merveilles du ciel</p>
-  </header>
+    <main>
+        <section id="presentation" class="presentation">
+            <h2>Bienvenue au Zoo des Espèces Volantes</h2>
+            <p>Découvrez un univers unique dédié aux oiseaux, chauves-souris et autres créatures ailées. Notre mission est de protéger, éduquer et faire découvrir la diversité fascinante des espèces volantes à travers le monde.</p>
+        </section>
 
-  <nav>
-    <a href="#a-propos">À propos</a>
-    <a href="#animaux">Nos espèces</a>
-    <a href="#contact">Contact</a>
-  </nav>
+        <section id="galerie" class="galerie">
+            <div class="oiseau">
+                <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/bird-1208236_1280.jpg" alt="Ara bleu" />
+                <h3>Ara Bleu</h3>
+                <p>Un perroquet spectaculaire aux plumes bleues éclatantes, originaire d'Amérique du Sud.</p>
+            </div>
+            <div class="oiseau">
+                <img src="https://cdn.pixabay.com/photo/2017/02/27/15/43/owl-2101314_1280.jpg" alt="Hibou" />
+                <h3>Hibou Grand-Duc</h3>
+                <p>Un rapace nocturne impressionnant avec de grands yeux perçants.</p>
+            </div>
+            <div class="oiseau">
+                <img src="https://cdn.pixabay.com/photo/2014/12/21/23/28/bat-575485_1280.jpg" alt="Chauve-souris" />
+                <h3>Chauve-souris</h3>
+                <p>Maîtresse du vol nocturne, la chauve-souris joue un rôle clé dans l'écosystème.</p>
+            </div>
+            <div class="oiseau">
+                <img src="https://cdn.pixabay.com/photo/2017/11/11/21/10/hummingbird-2931102_1280.jpg" alt="Colibri" />
+                <h3>Colibri</h3>
+                <p>Petit oiseau agile capable de voler sur place grâce à ses battements d'ailes rapides.</p>
+            </div>
+        </section>
 
-  <div class="hero">
-    Bienvenue au Zoo Volant
-  </div>
+        <section id="contact" style="text-align:center; margin-top: 50px;">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question, réservation ou visite guidée, envoyez-nous un email à <a href="mailto:contact@zoo-volant.fr">contact@zoo-volant.fr</a>.</p>
+        </section>
+    </main>
 
-  <section id="a-propos" class="section">
-    <h2>À propos</h2>
-    <p>
-      Le Zoo des Ailes du Monde est un lieu unique dédié à la découverte des créatures qui peuplent les airs. 
-      Des majestueux rapaces aux minuscules colibris, en passant par les chauves-souris mystérieuses et les papillons colorés, 
-      notre zoo abrite une incroyable variété d’espèces volantes.
-    </p>
-  </section>
-
-  <section id="animaux" class="section">
-    <h2>Nos espèces volantes</h2>
-    <div class="gallery">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Bald_Eagle_Portrait.jpg" alt="Aigle">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Hummingbird.jpg" alt="Colibri">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Fruit_bat.jpg" alt="Chauve-souris">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Blue_morpho_butterfly.jpg" alt="Papillon morpho">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Owl_in_flight_-_5.jpg" alt="Hibou">
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p style="text-align: center;">
-      📍 classe bts ciel2 <br>
-      📞 ........<br>
-      📧 contact@btsciel2.fr
-    </p>
-  </section>
-
-  <footer>
-    &copy; 2025 zoo volant – Tous droits réservés.
-  </footer>
-
+    <footer>
+        &copy; 2025 Zoo des Espèces Volantes - Tous droits réservés
+    </footer>
 </body>
 </html>
