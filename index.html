@@ -1,36 +1,142 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-<title> Zoo à CIEL ouvert </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo des Animaux Volants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
-<center><h1><p style="color: red;">Bienvenue au meilleur des zoo</p></h1></center>
-<style>
-body {
-nav a{
-margin: 0 15px;
-text-decoration: none;
-color: #007BFF;
-}
-}
-</style>
-<center><header>
-<h3> direction pour plus d'information sur le zoo: </h3>
-<h3><nav><h/3>
-<a href="index.html">Accueil</a>
-<a href="Visiter.html">Visite</a>
-<a href="Tarifs.html">Tarifs</a>
-<a href="Acces.html">Accès</a>
-    <a href="Contact.html">Contact</a>
-</nav>
-</header></center>
 
-<main><h3><center>
-<h2>Découvrez et admirez les animaux qui volent en plein air:</h2></center><br>
-<center>Plongez dans un monde fascinant où s’épanouissent oiseaux majestueux, papillons colorés, chauves-souris mystérieuses et bien d’autres créatures capables de s’envoler.<br> Notre zoo unique en son genre vous invite à découvrir la diversité incroyable des animaux volants, leur beauté, leurs comportements étonnants, et l’importance de leur protection dans la nature.<br></center>
-<center>voici le bulletin météorologique de cette semaine<br></center>
-<center><div id="cont_MzAzODMzNHw1fDN8MXwzfCNmOGEwYzJ8MnwjZmZmZmZmfGd8">
-    <div id="spa_MzAzODMzNHw1fDN8MXwzfCNmOGEwYzJ8MnwjZmZmZmZmfGd8"><a id="a_MzAzODMzNHw1fDN8MXwzfCNmOGEwYzJ8MnwjZmZmZmZmfGd8" href="https://www.meteocity.com/france/ajaccio-v3038334?utm_medium=widget&utm_source=referral&utm_campaign=france-ajaccio-v3038334&utm_content=location" target="_top" style="color:#333;text-decoration:none;">Météo Ajaccio</a> ©<a target="_top" href="https://www.meteocity.com?utm_medium=widget&utm_campaign=france-ajaccio-v3038334&utm_content=homepage">Météocity</a></div>
-    <script type="text/javascript" src="https://www.meteocity.com/widget/js/MzAzODMzNHw1fDN8MXwzfCNmOGEwYzJ8MnwjZmZmZmZmfGd8"></script>
-</div></center>
+    <header>
+        <h1>Bienvenue au Zoo des Animaux Volants</h1>
+        <p>Découvrez les merveilles du ciel</p>
+    </header>
 
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#animaux">Nos Animaux</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <section id="accueil">
+        <div class="intro">
+            <h2>Un zoo unique en son genre</h2>
+            <p>Le Zoo des Animaux Volants est un lieu où vous pouvez observer des oiseaux exotiques, des chauves-souris, des insectes volants et bien d'autres créatures fascinantes qui partagent la capacité de voler. Notre mission est de sensibiliser à la conservation des espèces menacées et de vous offrir une expérience inoubliable.</p>
+        </div>
+    </section>
+
+    <section id="animaux">
+        <h2>Nos Animaux Volants</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/250" alt="Oiseau exotique">
+                <h3>Oiseau Exotique</h3>
+                <p>Admirez les magnifiques couleurs des oiseaux tropicaux qui volent librement dans nos espaces dédiés.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250" alt="Chauve-souris">
+                <h3>Chauve-souris</h3>
+                <p>Explorez le monde mystérieux des chauves-souris et découvrez leur rôle essentiel dans l'écosystème nocturne.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250" alt="Papillon">
+                <h3>Papillons</h3>
+                <p>Les papillons sont les bijoux du zoo, avec leurs ailes colorées et leurs parcours fascinants.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-info">
+            <h3>Contactez-nous</h3>
+            <p>Adresse: 123 Rue du Ciel, 75000 Paris</p>
+            <p>Email: contact@zoodesanimauxvolants.com</p>
+            <p>Téléphone: 01 23 45 67 89</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Zoo des Animaux Volants - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
