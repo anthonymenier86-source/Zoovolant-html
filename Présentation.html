@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zoo Volant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: 
+              linear-gradient(rgba(0, 77, 64, 0.7), rgba(0, 77, 64, 0.7)),
+              url('file:///C:/Users/Anthony/Pictures/259eff0fa3daf06d3e54535b9a2d3448.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #e0f2f1;
+        }
+        header {
+            background-color: rgba(0, 121, 107, 0.85);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #b2dfdb;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        section.presentation {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        section.presentation h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #a7ffeb;
+        }
+        section.presentation p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #b2dfdb;
+        }
+        section.galerie {
+            display: none; /* caché par défaut */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        section.galerie.visible {
+            display: grid; /* devient visible */
+        }
+        .oiseau {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+            color: #004d40;
+        }
+        .oiseau:hover {
+            transform: scale(1.05);
+        }
+        .oiseau img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .oiseau h3 {
+            margin: 10px 0 5px;
+        }
+        .oiseau p {
+            padding: 0 10px 15px;
+            font-size: 1rem;
+            color: #00796b;
+        }
+        section#contact {
+            text-align: center;
+            margin-top: 50px;
+            color: #b2dfdb;
+        }
+        section#contact a {
+            color: #80cbc4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section#contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: rgba(0, 77, 64, 0.85);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zoo Volant</h1>
+        <nav>
+            <a href="#Accueil">Accueil</a>
+            <a href="#presentation">Présentation</a>
+            <a id="boutonGalerie">Galerie</a> <!-- Ce lien déclenche l'affichage -->
+            <a href="#contact">Contact</a>
+            <a href="#Visite">Visite</a>
+            <a href="#Tarifs">Tarifs</a>
+            <a href="#Accès">Accès</a>
+            <a href="#Restauration">Restauration</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="presentation" class="presentation">
+            <h2>Bienvenue au Zoo Volant</h2>
+            <p>Découvrez un univers unique dédié aux oiseaux, chauves-souris et autres créatures ailées. Notre mission est de protéger, éduquer et faire découvrir la diversité fascinante des espèces volantes à travers le monde.</p>
+        </section> <br>
+      <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/200040##14F646" title="Prévisions Ajaccio par Météo-France"> </iframe>
+    </main> <body>
+      </html>
+
+      
