@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             background: 
               linear-gradient(rgba(0, 77, 64, 0.7), rgba(0, 77, 64, 0.7)),
-              url('file:///C:/Users/Anthony/Pictures/259eff0fa3daf06d3e54535b9a2d3448.jpg') no-repeat center center fixed;
+              url('pngtree-forest-cartoon-background-picture-image_2383687.jpg') no-repeat center center fixed;
             background-size: cover;
             margin: 0;
             padding: 0;
@@ -33,7 +33,6 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
-            cursor: pointer;
         }
         nav a:hover {
             text-decoration: underline;
@@ -60,13 +59,9 @@
             color: #b2dfdb;
         }
         section.galerie {
-            display: none; /* caché par défaut */
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            margin-top: 30px;
-        }
-        section.galerie.visible {
-            display: grid; /* devient visible */
         }
         .oiseau {
             background: rgba(255, 255, 255, 0.85);
@@ -119,12 +114,14 @@
     <header>
         <h1>Zoo Volant</h1>
         <nav>
+            
             <a href="#presentation">Présentation</a>
+            <a href="#galerie">Galerie</a>
             <a href="#contact">Contact</a>
-            <a href="#Visite">Visite</a>
-            <a href="#Tarifs">Tarifs</a>
-            <a href="#Accès">Accès</a>
-            <a href="#Restauration">Restauration</a>
+			 <a href="#Visite">Visite</a>
+			  <a href="#Tarifs">Tarifs</a>
+			  <a href="#Accès">Accès</a>
+			  <a href="#Restauration">Restauration</a>
         </nav>
     </header>
 
@@ -134,26 +131,25 @@
             <p>Découvrez un univers unique dédié aux oiseaux, chauves-souris et autres créatures ailées. Notre mission est de protéger, éduquer et faire découvrir la diversité fascinante des espèces volantes à travers le monde.</p>
         </section>
 
-        <!-- Galerie cachée au départ -->
         <section id="galerie" class="galerie">
             <div class="oiseau">
-                <img src="file:///C:/Users/Anthony/Pictures/ara-bleu-ara-ararauna.jpg" alt="Ara bleu" />
-                <h3>Ara Bleu</h3>
+                <img src="perroquet-ara-bleu-jaune-e1713952038705.jpg" alt="Ara bleu" />
+                <h3>LeFab</h3>
                 <p>Un perroquet spectaculaire aux plumes bleues éclatantes, originaire d'Amérique du Sud.</p>
             </div>
             <div class="oiseau">
-                <img src="file:///C:/Users/Anthony/Pictures/gallery_356_adobestockij199983353-grand-duc_1599288567_large_.jpg" alt="Hibou" />
-                <h3>Hibou Grand-Duc</h3>
+                <img src="gallery_356_adobestockij199983353-grand-duc_1599288567_large_.jpg" alt="Hibou" />
+                <h3>Perret</h3>
                 <p>Un rapace nocturne impressionnant avec de grands yeux perçants.</p>
             </div>
             <div class="oiseau">
-                <img src="file:///C:/Users/Anthony/Pictures/grandperigueux-d332b37069144da1980ac5ab5acd8d8e-144054-ph0.jpg" alt="Chauve-souris" />
-                <h3>Chauve-souris</h3>
+                <img src="Desmo-boden.tif.jpg" alt="Chauve-souris" />
+                <h3>Derame</h3>
                 <p>Maîtresse du vol nocturne, la chauve-souris joue un rôle clé dans l'écosystème.</p>
             </div>
             <div class="oiseau">
-                <img src="file:///C:/Users/Anthony/Pictures/360_F_221322061_CU2r4F5zYMQphpc8QRNtkISZPrVZIsOK.jpg" alt="Colibri" />
-                <h3>Colibri</h3>
+                <img src="un-colibri-vous-rend-visite-voici-son-message-rare-et-porteur-de-sens-a-ne-pas-ignorer-.jpg" alt="Colibri" />
+                <h3>Paupaul</h3>
                 <p>Petit oiseau agile capable de voler sur place grâce à ses battements d'ailes rapides.</p>
             </div>
         </section>
@@ -167,15 +163,5 @@
     <footer>
         &copy; 2025 Zoo Volant - Tous droits réservés
     </footer>
-
-    <!-- JavaScript pour gérer l'affichage de la galerie -->
-    <script>
-        const boutonGalerie = document.getElementById('boutonGalerie');
-        const galerie = document.getElementById('galerie');
-
-        boutonGalerie.addEventListener('click', () => {
-            galerie.classList.toggle('visible');
-        });
-    </script>
 </body>
 </html>
