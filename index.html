@@ -1,45 +1,60 @@
-t<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Accueil - ZooVolant </title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Zoo des Animaux Volants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e0f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #004d40;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .animal {
+            background: white;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #ccc;
+        }
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-  body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url("../images/fond-zoo.jpg"); /* chemin relatif */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: white; /* pour que le texte soit lisible sur le fond */
-  text-align: center;
-}
-
-nav {
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent */
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 <body>
 
-  <nav>
-    <a href="index.html">Accueil</a> |
+<header>
+    <h1>Bienvenue au Zoo des Animaux Volants 🦅🦇🦋</h1>
+    <p>Un monde dédié aux créatures du ciel</p>
+</header>
+
+<nav>
+   <a href="index.html">Accueil</a> |
     <a href="contact.html">Contact</a> |
     <a href="visiter.html">Visiter</a> |
     <a href="acces.html">Accès</a> |
@@ -48,14 +63,50 @@ nav a {
     <a href="fauves.html">Fauves</a> |
     <a href="photos.html">Photos</a> |
     <a href="manger.html">Manger</a>
-  </nav>
+</nav>
 
-  <h1>Bienvenue au Zoo Safari</h1>
-  <p>Découvrez les merveilles du monde animalier !</p>
+<section id="oiseaux">
+    <h2>🦜 Oiseaux</h2>
+    <div class="animal">
+        <h3>Perroquet Ara</h3>
+        <p>Coloré, intelligent et bavard, l'ara est l'une des vedettes de notre volière tropicale.</p>
+    </div>
+    <div class="animal">
+        <h3>Aigle Royal</h3>
+        <p>Symbole de puissance, cet oiseau majestueux peut repérer une proie à plusieurs kilomètres.</p>
+    </div>
+</section>
 
-  <h2>Météo</h2>
- <iframe id="widget_autocomplete_preview"  width="150" height="300" frameborder="0" src="https://meteofrance.com/widget/prevision/200040##57FF09" title="Prévisions Ajaccio par Météo-France"> </iframe>
+<section id="chauves-souris">
+    <h2>🦇 Chauves-souris</h2>
+    <div class="animal">
+        <h3>Roussette de Malaisie</h3>
+        <p>Ce mammifère volant est aussi appelé "renard volant" à cause de son museau pointu.</p>
+    </div>
+</section>
+
+<section id="insectes">
+    <h2>🦋 Insectes volants</h2>
+    <div class="animal">
+        <h3>Morpho Bleu</h3>
+        <p>Un papillon aux ailes brillantes que vous pourrez observer dans notre serre tropicale.</p>
+    </div>
+    <div class="animal">
+        <h3>Libellule Empereur</h3>
+        <p>Rapide et agile, elle est l'une des meilleures chasseuses du ciel parmi les insectes.</p>
+    </div>
+</section>
+
+<section id="infos">
+    <h2>📍 Infos pratiques</h2>
+    <p>📅 Ouvert tous les jours de 9h à 18h</p>
+    <p>📍 Adresse : 123 Rue des Ailes, 75000 Paris</p>
+    <p>🎫 Tarifs : Adultes 12€, Enfants 6€, Gratuit -3 ans</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Zoo des Animaux Volants - Tous droits réservés</p>
+</footer>
 
 </body>
 </html>
-
